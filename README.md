@@ -1,16 +1,58 @@
-### Hi there 👋
+### Hey, I'm Jason! 👋
 
-<!--
-**laramoore/laramoore** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+```php
+<?php
 
-Here are some ideas to get you started:
+namespace JasonMoore;
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+class About extends Me
+{
+    /**
+     * Define company info.
+     * @const string
+     */
+    const COMPANY_NAME = 'Raviga';
+    const COMPANY_ROLE = 'Product Manager';
+
+    /**
+     * Return workplace info.
+     * @return array
+     */
+    public function getCurrentWorkplace(): array
+    {
+        return [
+            'workplace' => [
+                'company' => self::COMPANY_NAME,
+                'role' => self::COMPANY_NAME
+            ]
+        ];
+    }
+
+    /**
+     * Return daily activities.
+     * @return array
+     */
+    public function getDailyActivities(): array
+    {
+        return [
+            Php::class,
+            Laravel::class,
+            Vuejs::class,
+            Bootstrap::class,
+            Javascript::class,
+            Css::class,
+            Aws::class,
+            Qa::class,
+        ];
+    }
+
+    /**
+     * Return future goal.
+     * @return string
+     */
+    public function getFutureGoal(): string
+    {
+        return 'To build something amazing.';
+    }
+}
+```
