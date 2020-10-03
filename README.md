@@ -1,4 +1,5 @@
 ### Hey, I'm Jason! 👋
+✉️ [Jason.moore@consultant.com](mailto:jason.moore@consultant.com)
 
 ```php
 <?php
